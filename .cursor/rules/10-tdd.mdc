@@ -1,0 +1,24 @@
+---
+description: Enforce test-driven development and high-quality behavioral tests
+alwaysApply: true
+---
+
+# Test-Driven Development
+
+For non-trivial production behavior:
+
+1. RED: write or modify a test that expresses the desired behavior and confirm it fails for the expected reason.
+2. GREEN: implement the minimum code required to pass.
+3. REFACTOR: improve structure without changing behavior while tests remain green.
+
+Do not:
+
+- write implementation first and add tests afterward without justification
+- weaken assertions to make a failing implementation pass
+- skip or disable valid tests
+- over-mock implementation details
+- test private functions directly when public behavior can provide confidence
+
+Use unit tests for pure/domain behavior and integration tests for adapter/service boundaries.
+
+If the change is not suited to TDD, document the reason.

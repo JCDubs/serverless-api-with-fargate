@@ -1,0 +1,26 @@
+---
+description: Enforce hexagonal architecture, ports and adapters, and inward dependencies
+alwaysApply: true
+---
+
+# Ports and Adapters
+
+Dependencies must point inward.
+
+- Domain code must remain infrastructure-agnostic.
+- Application code coordinates use cases and depends on ports.
+- Ports represent stable capabilities/contracts.
+- Adapters implement ports and own vendor/framework details.
+- Composition roots wire concrete dependencies.
+
+Forbidden:
+
+- AWS SDK imports in domain code
+- database clients in application/domain business logic
+- HTTP request/response objects flowing deep into domain logic
+- concrete adapter dependencies in use cases
+- circular dependencies across layers
+
+Use interfaces where there is a meaningful boundary or capability.
+
+Do not create interfaces for every class merely to satisfy a style preference.

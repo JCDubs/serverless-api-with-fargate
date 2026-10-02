@@ -1,0 +1,28 @@
+---
+description: Apply testing-honeycomb strategy for service-oriented and serverless systems
+alwaysApply: true
+---
+
+# Testing Honeycomb
+
+Favor confidence from:
+
+1. integration/component tests around service and adapter boundaries
+2. focused unit tests for domain logic
+3. contract tests for independently evolving APIs/events
+4. a small number of critical-path E2E tests
+
+Integration testing is not optional when changing:
+
+- persistence adapters
+- messaging adapters
+- HTTP adapters
+- serialization
+- infrastructure integration
+- authorization
+- event schemas
+- third-party clients
+
+Do not replace important integration confidence with mocks.
+
+Unit tests should be fast, deterministic, and behavior-focused.

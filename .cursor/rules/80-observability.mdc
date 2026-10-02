@@ -1,0 +1,19 @@
+---
+description: Enforce production-grade observability and diagnosability
+alwaysApply: true
+---
+
+# Observability
+
+Production code must be diagnosable.
+
+- Use structured logs.
+- Do not log secrets or tokens.
+- Propagate correlation identifiers.
+- Emit meaningful technical and business metrics.
+- Trace cross-service flows when useful.
+- Create actionable alarms around user-visible or service-level failures.
+- Make asynchronous failure and dead-letter states visible.
+- Include enough context to diagnose failures without exposing sensitive information.
+
+Observability requirements should be considered during design, not added after implementation.

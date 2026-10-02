@@ -1,0 +1,24 @@
+---
+description: Core engineering standards for all changes
+alwaysApply: true
+---
+
+# Core Engineering Standards
+
+Follow `AGENTS.md`.
+
+Mandatory defaults:
+
+- TDD for non-trivial behavior changes.
+- Clean Code and SOLID.
+- Ports and Adapters.
+- Code through interfaces at meaningful boundaries.
+- Testing Honeycomb.
+- Serverless-first, not serverless-only.
+- Convention over configuration.
+- AWS Well-Architected principles.
+- Infrastructure as Code.
+
+Before introducing a new pattern, dependency, service, folder structure, naming scheme, or configuration mechanism, inspect the repository for the existing convention and reuse it where suitable.
+
+Prefer simple, explicit, testable designs over generalized frameworks.

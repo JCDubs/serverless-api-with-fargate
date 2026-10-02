@@ -1,0 +1,38 @@
+---
+description: Apply AWS architecture and engineering best practices
+alwaysApply: true
+---
+
+# AWS Best Practices
+
+Apply AWS Well-Architected thinking to architecture and code.
+
+Required considerations:
+
+- least-privilege IAM
+- encryption
+- secret management
+- idempotency
+- retries/backoff
+- timeouts
+- DLQs/failure destinations where appropriate
+- structured logging
+- tracing/correlation
+- metrics and alarms
+- quotas and throttling
+- concurrency and backpressure
+- backups/restore where state matters
+- cost implications
+- Infrastructure as Code
+- operational ownership
+
+Prefer managed services where they reduce undifferentiated operational work.
+
+For Lambda:
+
+- keep handlers thin
+- reuse clients/resources outside the handler where safe
+- never rely on invocation-to-invocation in-memory state
+- design for duplicate/retried events
+- use explicit timeout and memory settings based on workload
+- protect downstream systems using concurrency/backpressure where needed
