@@ -4,5 +4,8 @@
 	"watch": {
 		"include": ["bin/**", "lib/**"],
 		"exclude": ["node_modules", "cdk.out", "dist"]
+	},
+	"context": {
+		"@aws-cdk/core:defaultCrossStackReferences": "strong"
 	}
 }

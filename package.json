@@ -8,6 +8,9 @@
 	"scripts": {
 		"lint": "turbo run lint",
 		"format": "biome check --write .",
+		"test": "turbo run test",
+		"typecheck": "turbo run typecheck",
+		"check": "biome check . && turbo run typecheck test",
 		"prepare": "bash scripts/install-hooks.sh"
 	},
 	"devDependencies": {
