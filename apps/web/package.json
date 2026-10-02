@@ -1,0 +1,16 @@
+{
+	"name": "web",
+	"version": "0.0.0",
+	"private": true,
+	"scripts": {
+		"lint": "biome check ."
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^2.5.15",
+		"@types/node": "^26.6.4",
+		"typescript": "^7.0.2"
+	},
+	"dependencies": {
+		"dotenv": "^18.0.5"
+	}
+}
