@@ -1,0 +1,35 @@
+---
+description: Enforce convention over configuration in architecture, code, tests, and infrastructure
+alwaysApply: true
+---
+
+# Convention Over Configuration
+
+Prefer repository conventions over new configuration.
+
+Before adding configuration:
+
+1. Check whether the behavior can be expressed by structure, naming, types, or code.
+2. Check whether the repository already has a convention.
+3. Prefer a safe default requiring no configuration.
+4. Add configuration only when the value genuinely varies by environment, deployment, integration, or operation.
+
+Good configuration examples:
+
+- environment-specific endpoints
+- resource identifiers
+- capacity
+- thresholds
+- secrets references
+- feature flags
+
+Bad configuration examples:
+
+- selecting architectural layers dynamically
+- mapping routine code locations through configuration
+- replacing stable naming conventions with lookup tables
+- building generalized "engine" configuration for simple domain behavior
+
+Avoid large configuration matrices.
+
+Prefer one obvious way to add a feature, adapter, handler, test, or infrastructure component.

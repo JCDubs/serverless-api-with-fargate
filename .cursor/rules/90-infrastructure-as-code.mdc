@@ -1,0 +1,22 @@
+---
+description: Enforce infrastructure as code and convention-driven AWS infrastructure
+alwaysApply: true
+---
+
+# Infrastructure as Code
+
+Cloud resources must be represented in the repository's standard IaC system.
+
+Infrastructure should be:
+
+- repeatable
+- reviewable
+- parameterized only where values genuinely differ
+- convention-driven
+- least-privilege by default
+- tagged consistently
+- observable by default
+
+Do not create production resources manually as a normal delivery path.
+
+Prefer reusable constructs/modules that encode strong organizational conventions over highly configurable generic abstractions.

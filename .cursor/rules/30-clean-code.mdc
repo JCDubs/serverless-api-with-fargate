@@ -1,0 +1,31 @@
+---
+description: Enforce clean-code and SOLID practices
+alwaysApply: true
+---
+
+# Clean Code
+
+Prefer:
+
+- intention-revealing names
+- small cohesive functions/modules
+- explicit dependencies
+- immutable data where practical
+- composition over inheritance
+- narrow interfaces
+- domain-specific types
+- early returns over deeply nested branching
+- removal of duplication in business rules
+
+Avoid:
+
+- god classes/modules
+- boolean flag arguments
+- primitive obsession
+- hidden global state
+- speculative abstraction
+- dead code
+- comments that restate code
+- catch-all utility modules with unrelated responsibilities
+
+Refactoring must preserve externally observable behavior.

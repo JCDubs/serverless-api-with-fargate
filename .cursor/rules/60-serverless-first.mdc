@@ -1,0 +1,27 @@
+---
+description: Prefer serverless and managed services without forcing them where unsuitable
+alwaysApply: true
+---
+
+# Serverless First, Not Serverless Only
+
+Default to evaluating serverless and managed AWS services first.
+
+Prefer Lambda, API Gateway, EventBridge, SQS, SNS, Step Functions, DynamoDB, S3, CloudFront, Cognito, and managed observability/security services when they fit.
+
+Do not force serverless when containers, long-running compute, relational databases, streaming systems, or other AWS services better satisfy requirements.
+
+Significant compute/service choices must consider:
+
+- workload shape
+- latency
+- throughput
+- duration
+- state
+- operational burden
+- reliability
+- security
+- cost
+- portability/reversibility
+
+Architecture must be requirement-driven, not technology-ideology-driven.
