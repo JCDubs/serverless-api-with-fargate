@@ -1,0 +1,8 @@
+**/node_modules
+**/.turbo
+**/dist
+**/cdk.out
+**/.env
+.git
+**/*.tsbuildinfo
+**/coverage
